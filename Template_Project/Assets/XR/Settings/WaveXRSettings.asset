@@ -12,17 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c76bebe14424446cca62c6e29db5054f, type: 3}
   m_Name: WaveXRSettings
   m_EditorClassIdentifier: 
-  preferedStereoRenderingPath: 1
+  preferedStereoRenderingPath: 0
   useDoubleWidth: 0
   useRenderMask: 1
   enableTimeWarpStabilizedMode: 2
   adaptiveQualityMode: 2
   AQ_SendQualityEvent: 1
-  AQ_AutoFoveation: 0
-  useAQDynamicResolution: 1
+  AQ_AutoFoveation: 1
+  useAQDynamicResolution: 0
   DR_DefaultIndex: 0
   DR_TextSize: 20
-  DR_ResolutionScaleList: []
+  DR_ResolutionScaleList:
+  - 1
+  - 0.9
+  - 0.8
+  - 0.7
+  - 0.6
   foveationMode: 2
   leftClearVisionFOV: 38
   rightClearVisionFOV: 38
