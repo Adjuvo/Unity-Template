@@ -6,12 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/SenseGlove/CalibrationVoid/CalibrationVoid_XR.unity
+    guid: c7831fc90e6993444a80619dd268dcfd
+  - enabled: 1
     path: Assets/Template-Scene.unity
     guid: 13e0ecad50d17ed49a8d55f12a43737b
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 6386920c2c5a8f54aa2562eda5ea14cd,
       type: 2}
     Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: 18a82114ae7522b42ac276f3d1e30dbc,
+      type: 2}
+    com.htc.upm.wave.xrsdk.xrsettings: {fileID: 11400000, guid: 0b5348c3b40221246a1aa4e0e8da35d5,
       type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: cc0576c9fa2bac945b4368a98689d63c,
       type: 2}

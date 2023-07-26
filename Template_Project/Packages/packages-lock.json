@@ -1,5 +1,14 @@
 {
   "dependencies": {
+    "com.htc.upm.wave.xrsdk": {
+      "version": "4.1.0-preview.5.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.xr.management": "3.0.6"
+      },
+      "url": "https://npm-registry.vive.com"
+    },
     "com.unity.collab-proxy": {
       "version": "1.14.1",
       "depth": 0,
