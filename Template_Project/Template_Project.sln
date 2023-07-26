@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{3A102B97-473F-5D5C-B239-0D1EC0D11465}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.XR.OpenVR", "Unity.XR.OpenVR.csproj", "{02783478-E214-5BF1-415C-16C252694548}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.XR.OpenVR.Editor", "Unity.XR.OpenVR.Editor.csproj", "{404FA32B-9AB0-A2F5-41E2-D4D743ADCDA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +17,14 @@ Global
 		{3A102B97-473F-5D5C-B239-0D1EC0D11465}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A102B97-473F-5D5C-B239-0D1EC0D11465}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A102B97-473F-5D5C-B239-0D1EC0D11465}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02783478-E214-5BF1-415C-16C252694548}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02783478-E214-5BF1-415C-16C252694548}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02783478-E214-5BF1-415C-16C252694548}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02783478-E214-5BF1-415C-16C252694548}.Release|Any CPU.Build.0 = Release|Any CPU
+		{404FA32B-9AB0-A2F5-41E2-D4D743ADCDA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{404FA32B-9AB0-A2F5-41E2-D4D743ADCDA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{404FA32B-9AB0-A2F5-41E2-D4D743ADCDA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{404FA32B-9AB0-A2F5-41E2-D4D743ADCDA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
