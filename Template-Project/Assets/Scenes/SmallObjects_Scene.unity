@@ -309,7 +309,7 @@ MonoBehaviour:
   objectsToGet:
   - {fileID: 476119702}
   mustHaveTag: 
-  detectionTime: 0.2
+  detectionTime: 0
   detectHeldObjects: 1
   highlighter: {fileID: 0}
   debugTxt: {fileID: 0}
@@ -326,6 +326,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 476119704}
+        m_TargetAssemblyTypeName: SGExample.SGExample_SmallObject, Assembly-CSharp
+        m_MethodName: RemoveFromPickingUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Untagged
           m_BoolArgument: 0
         m_CallState: 2
   ObjectRemoved:
@@ -623,7 +635,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 3, z: 3}
+  m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &85467927
 GameObject:
@@ -916,7 +928,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 3, z: 3}
+  m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &107046223
 GameObject:
@@ -1263,7 +1275,7 @@ MonoBehaviour:
   objectsToGet:
   - {fileID: 1895658763}
   mustHaveTag: 
-  detectionTime: 0.2
+  detectionTime: 0
   detectHeldObjects: 1
   highlighter: {fileID: 0}
   debugTxt: {fileID: 0}
@@ -1280,6 +1292,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1895658765}
+        m_TargetAssemblyTypeName: SGExample.SGExample_SmallObject, Assembly-CSharp
+        m_MethodName: RemoveFromPickingUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Untagged
           m_BoolArgument: 0
         m_CallState: 2
   ObjectRemoved:
@@ -2922,6 +2946,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   white: {fileID: 2100000, guid: a174742e2f3013a44ab26442df898032, type: 2}
   red: {fileID: 2100000, guid: 56beb5054be12414dbabe1f5a46cfdd6, type: 2}
+  hover: {fileID: 849876041}
 --- !u!65 &331466372
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4044,6 +4069,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   white: {fileID: 2100000, guid: a174742e2f3013a44ab26442df898032, type: 2}
   red: {fileID: 2100000, guid: 56beb5054be12414dbabe1f5a46cfdd6, type: 2}
+  hover: {fileID: 849876041}
 --- !u!65 &476119705
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4625,7 +4651,7 @@ MonoBehaviour:
   objectsToGet:
   - {fileID: 1850040255}
   mustHaveTag: 
-  detectionTime: 0.2
+  detectionTime: 0
   detectHeldObjects: 1
   highlighter: {fileID: 0}
   debugTxt: {fileID: 0}
@@ -4642,6 +4668,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1850040257}
+        m_TargetAssemblyTypeName: SGExample.SGExample_SmallObject, Assembly-CSharp
+        m_MethodName: RemoveFromPickingUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Untagged
           m_BoolArgument: 0
         m_CallState: 2
   ObjectRemoved:
@@ -4811,7 +4849,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 3, z: 3}
+  m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &562707392
 GameObject:
@@ -5848,7 +5886,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 3, z: 3}
+  m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &794185496
 GameObject:
@@ -6125,6 +6163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   white: {fileID: 2100000, guid: a174742e2f3013a44ab26442df898032, type: 2}
   red: {fileID: 2100000, guid: 56beb5054be12414dbabe1f5a46cfdd6, type: 2}
+  hover: {fileID: 849876041}
 --- !u!65 &812972709
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8138,7 +8177,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 3, z: 3}
+  m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1134409153
 GameObject:
@@ -8210,7 +8249,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  cameraPosition: {fileID: 0}
 --- !u!1 &1136952469
 GameObject:
   m_ObjectHideFlags: 0
@@ -8634,7 +8672,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 3, z: 3}
+  m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1176256767
 GameObject:
@@ -10075,6 +10113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   white: {fileID: 2100000, guid: a174742e2f3013a44ab26442df898032, type: 2}
   red: {fileID: 2100000, guid: 56beb5054be12414dbabe1f5a46cfdd6, type: 2}
+  hover: {fileID: 849876041}
 --- !u!65 &1347105563
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11163,7 +11202,7 @@ MonoBehaviour:
   objectsToGet:
   - {fileID: 1492984916}
   mustHaveTag: 
-  detectionTime: 0.2
+  detectionTime: 0
   detectHeldObjects: 1
   highlighter: {fileID: 0}
   debugTxt: {fileID: 0}
@@ -11180,6 +11219,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1492984918}
+        m_TargetAssemblyTypeName: SGExample.SGExample_SmallObject, Assembly-CSharp
+        m_MethodName: RemoveFromPickingUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Untagged
           m_BoolArgument: 0
         m_CallState: 2
   ObjectRemoved:
@@ -11328,6 +11379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   white: {fileID: 2100000, guid: a174742e2f3013a44ab26442df898032, type: 2}
   red: {fileID: 2100000, guid: 56beb5054be12414dbabe1f5a46cfdd6, type: 2}
+  hover: {fileID: 849876041}
 --- !u!65 &1492984919
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11576,7 +11628,7 @@ MonoBehaviour:
   objectsToGet:
   - {fileID: 331466369}
   mustHaveTag: 
-  detectionTime: 0.2
+  detectionTime: 0
   detectHeldObjects: 1
   highlighter: {fileID: 0}
   debugTxt: {fileID: 0}
@@ -11593,6 +11645,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 331466371}
+        m_TargetAssemblyTypeName: SGExample.SGExample_SmallObject, Assembly-CSharp
+        m_MethodName: RemoveFromPickingUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Untagged
           m_BoolArgument: 0
         m_CallState: 2
   ObjectRemoved:
@@ -11820,6 +11884,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   white: {fileID: 2100000, guid: a174742e2f3013a44ab26442df898032, type: 2}
   red: {fileID: 2100000, guid: 56beb5054be12414dbabe1f5a46cfdd6, type: 2}
+  hover: {fileID: 849876041}
 --- !u!65 &1537718923
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12207,7 +12272,7 @@ MonoBehaviour:
   objectsToGet:
   - {fileID: 812972706}
   mustHaveTag: 
-  detectionTime: 0.2
+  detectionTime: 0
   detectHeldObjects: 1
   highlighter: {fileID: 0}
   debugTxt: {fileID: 0}
@@ -12224,6 +12289,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 812972708}
+        m_TargetAssemblyTypeName: SGExample.SGExample_SmallObject, Assembly-CSharp
+        m_MethodName: RemoveFromPickingUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Untagged
           m_BoolArgument: 0
         m_CallState: 2
   ObjectRemoved:
@@ -13219,7 +13296,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 3, z: 3}
+  m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1763262518
 GameObject:
@@ -13407,7 +13484,7 @@ MonoBehaviour:
   objectsToGet:
   - {fileID: 1537718920}
   mustHaveTag: 
-  detectionTime: 0.2
+  detectionTime: 0
   detectHeldObjects: 1
   highlighter: {fileID: 0}
   debugTxt: {fileID: 0}
@@ -13424,6 +13501,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1537718922}
+        m_TargetAssemblyTypeName: SGExample.SGExample_SmallObject, Assembly-CSharp
+        m_MethodName: RemoveFromPickingUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Untagged
           m_BoolArgument: 0
         m_CallState: 2
   ObjectRemoved:
@@ -13751,6 +13840,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   white: {fileID: 2100000, guid: a174742e2f3013a44ab26442df898032, type: 2}
   red: {fileID: 2100000, guid: 56beb5054be12414dbabe1f5a46cfdd6, type: 2}
+  hover: {fileID: 849876041}
 --- !u!65 &1850040258
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14292,6 +14382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   white: {fileID: 2100000, guid: a174742e2f3013a44ab26442df898032, type: 2}
   red: {fileID: 2100000, guid: 56beb5054be12414dbabe1f5a46cfdd6, type: 2}
+  hover: {fileID: 849876041}
 --- !u!65 &1895658766
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14619,7 +14710,7 @@ MonoBehaviour:
   objectsToGet:
   - {fileID: 1347105560}
   mustHaveTag: 
-  detectionTime: 0.2
+  detectionTime: 0
   detectHeldObjects: 1
   highlighter: {fileID: 0}
   debugTxt: {fileID: 0}
@@ -14636,6 +14727,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1347105562}
+        m_TargetAssemblyTypeName: SGExample.SGExample_SmallObject, Assembly-CSharp
+        m_MethodName: RemoveFromPickingUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Untagged
           m_BoolArgument: 0
         m_CallState: 2
   ObjectRemoved:
@@ -15245,7 +15348,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 3, z: 3}
+  m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2123281750
 GameObject:
@@ -15258,6 +15361,7 @@ GameObject:
   - component: {fileID: 2123281752}
   - component: {fileID: 2123281751}
   - component: {fileID: 2123281753}
+  - component: {fileID: 2123281754}
   m_Layer: 0
   m_Name: XRRig
   m_TagString: Untagged
@@ -15318,6 +15422,22 @@ MonoBehaviour:
   hardwareFamily: 0
   leftControllerModel: {fileID: 0}
   rightControllerModel: {fileID: 0}
+--- !u!114 &2123281754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123281750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aaa2b1a3fd824943ada96ae0fe42cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xrRig: {fileID: 2123281752}
+  head: {fileID: 963194228}
+  leftHandTrackingDevice: {fileID: 45809053}
+  rightHandTrackingDevice: {fileID: 782964594}
 --- !u!1 &2134078896
 GameObject:
   m_ObjectHideFlags: 0
@@ -17960,7 +18080,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1661046638491208
 GameObject:
   m_ObjectHideFlags: 0
@@ -18977,7 +19097,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1982403506619798
 GameObject:
   m_ObjectHideFlags: 0
@@ -29149,7 +29269,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  impactWaveform: {fileID: 0}
 --- !u!114 &114111661861029510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29528,7 +29647,6 @@ MonoBehaviour:
   leftHand: {fileID: 114710117199709184}
   rightHand: {fileID: 114001878260690246}
   vrRig: {fileID: 2123281753}
-  headsetDetection: {fileID: 0}
 --- !u!114 &114271256580210816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29601,7 +29719,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab7fdcf64c3b1954d995c1126ad9a5fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackingTarget: {fileID: 4459114665293734}
+  trackingTarget: {fileID: 4666787927472108}
   updateTime: 0
   linkMeTo: 21
 --- !u!114 &114293800673030612
@@ -29814,7 +29932,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  impactWaveform: {fileID: 0}
 --- !u!114 &114389781083626184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30075,10 +30192,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectsTo: 0
-  wristTrackingMethod: 0
-  origin: {fileID: 2123281752}
-  wristTrackingObj: {fileID: 0}
-  wristTrackingOffsets: 0
   DeviceConnected:
     m_PersistentCalls:
       m_Calls: []
@@ -30383,10 +30496,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectsTo: 1
-  wristTrackingMethod: 0
-  origin: {fileID: 2123281752}
-  wristTrackingObj: {fileID: 782964594}
-  wristTrackingOffsets: 3
   DeviceConnected:
     m_PersistentCalls:
       m_Calls: []
@@ -33129,7 +33238,6 @@ MonoBehaviour:
   TeleportEvent:
     m_PersistentCalls:
       m_Calls: []
-  cameraPosition: {fileID: 0}
 --- !u!4 &6868390951018663856
 Transform:
   m_ObjectHideFlags: 0

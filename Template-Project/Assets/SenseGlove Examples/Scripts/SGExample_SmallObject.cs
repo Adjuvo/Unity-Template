@@ -17,6 +17,8 @@ namespace SGExample
         public Material white;
         public Material red;
 
+        public SGExample_SmallObjectPickup hover;
+
         private void Start()
         {
             grabable = GetComponent<SG.SG_Grabable>();
@@ -32,6 +34,15 @@ namespace SGExample
         {
             this.gameObject.GetComponent<MeshRenderer>().material = white;
             grabable.enabled = false;
+        }
+
+        public void RemoveFromPickingUp()
+        {
+            MakeNonGrabable();
+            hover.RemoveFromList(this.gameObject);
+            this.tag = "Untagged";
+            this.GetComponent<BoxCollider>().enabled = false;
+            Destroy(this.GetComponent<SGExample_SmallObject>());
         }
     }
 }

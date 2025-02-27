@@ -313,6 +313,9 @@
     <Reference Include="LitJson">
       <HintPath>Packages\com.unity.xr.picoxr\Runtime\Android\LitJson.dll</HintPath>
     </Reference>
+    <Reference Include="SGCoreCs">
+      <HintPath>Assets\SenseGlove\Plugins\Windows\SGCoreCs.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.11.2\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -321,9 +324,6 @@
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.11.2\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-    </Reference>
-    <Reference Include="SGCoreCs">
-      <HintPath>Assets\SenseGlove\Plugins\Windows\SGCoreCs.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>

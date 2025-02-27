@@ -89,6 +89,19 @@ namespace SGExample
             return obj;
         }
 
+        public void RemoveFromList(GameObject obj)
+        {
+            for (int i = 0; i < objectsInHover.Count; i++)
+            {
+               if (obj == objectsInHover[i])
+                {
+                    objectsInHover.RemoveAt(i);
+                    oldRed = null;
+                }
+                    
+            }
+        }
+
         private void OnTriggerStay(Collider other)
         {
 

@@ -41,13 +41,14 @@ public class SG_TeleportScript : MonoBehaviour
     private GameObject beam;
     private SG_GestureLayer gestureLayer;
     private GameObject wrist;
-    public Transform cameraPosition;
+    private Transform cameraPosition;
 
     // vars
     private float teleportTimer = 0f;
     private float startTimer = 0f;
     private bool validHit = false;
     private Vector3 teleportDestination = new Vector3(0,0,0);
+    private bool teleporting = false;
 
     // pre stashed values
     private Vector3 rightBeam = new Vector3(0.0992f, -0.0161f, 0.0317f);
@@ -103,14 +104,16 @@ public class SG_TeleportScript : MonoBehaviour
                 }
             }
             startTimer = startTimer + Time.deltaTime;
+            teleporting = true;
         }
-        else
+        else if (teleporting)
         {
             beamMain.SetActive(false);
             teleportTimerObject.SetActive(false);
             teleportTimer = 0f;
             startTimer = 0f;
             TimerSize();
+            teleporting = false;
         }
     }
 

@@ -68,21 +68,10 @@ public class SB_Dial : SG_Grabable
     {
         angle = Mathf.Abs(angle);
 
-        int run = 0;
+        float stepSize = 360 / step;
+        int currentStep = (int)(angle / stepSize);
 
-        for(int i = 0; i < (180 / step); i++)
-        {
-            int thisStep = i * step;
-            int nextStep = (i + 1) * step;
-
-            if (angle > thisStep && angle < nextStep)
-            {
-                run = i;
-                break;
-            }
-        }
-
-        return run;
+        return currentStep;
     }
 
     protected override void SetupScript()

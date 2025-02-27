@@ -337,6 +337,9 @@
     <Reference Include="LitJson">
       <HintPath>Packages\com.unity.xr.picoxr\Runtime\Android\LitJson.dll</HintPath>
     </Reference>
+    <Reference Include="SGCoreCs">
+      <HintPath>Assets\SenseGlove\Plugins\Windows\SGCoreCs.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.11.2\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -345,9 +348,6 @@
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.11.2\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-    </Reference>
-    <Reference Include="SGCoreCs">
-      <HintPath>Assets\SenseGlove\Plugins\Windows\SGCoreCs.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.20f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
