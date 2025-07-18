@@ -6,15 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/SenseGlove/CalibrationVoid/CalibrationVoid_XR.unity
-    guid: c7831fc90e6993444a80619dd268dcfd
+    path: Assets/Scenes/Pico/CalibrationVoid_XR_Pico.unity
+    guid: c327cc2dd11d32f4183f5c061b5cb505
   - enabled: 1
-    path: Assets/Scenes/Examples_Scene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/Pico/Examples_Scene_Pico.unity
+    guid: 18f8d4d54379e4b4eae3e3b5fe129cca
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 341fdb34da54a1d47882b2b5a9507284, type: 2}
     Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: 059cd72d2a2689c45898e5bed76f4337, type: 2}
-    Unity.XR.PXR.Settings: {fileID: 11400000, guid: c756cfaa65b3080459284e7d3400765d, type: 2}
+    Unity.XR.PXR.Settings: {fileID: 11400000, guid: 52a7748e3576aba44913b4f5f5360afd, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: 0599dcbe93c336044a97203387cdced3, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d2ef008525957194e94db616524b80f3, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 393e302e36365874d957565bea6133a2, type: 2}

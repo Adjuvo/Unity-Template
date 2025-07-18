@@ -22,7 +22,10 @@ public class SG_TeleportScript : MonoBehaviour
     public GameObject xrRig;
 
     [Header("Layer of the ground plane")]
-    public LayerMask layerMask;
+    public LayerMask layerGround;
+
+    [Header("Layer of objects where teleporting is prohibited")]
+    public LayerMask layerForbidden;
 
     [Header("Colour of beam")]
     public Material greenBeam;
@@ -34,10 +37,10 @@ public class SG_TeleportScript : MonoBehaviour
 
     // -- private vars --
     // objects
-    private SG_BasicGesture pointGesture;
-    private GameObject teleportTimerObject;
+    public SG_BasicGesture pointGesture;
+    public GameObject teleportTimerObject;
     private Slider timer;
-    private GameObject beamMain;
+    public GameObject beamMain;
     private GameObject beam;
     private SG_GestureLayer gestureLayer;
     private GameObject wrist;
@@ -135,11 +138,13 @@ public class SG_TeleportScript : MonoBehaviour
 
         Ray raycast = new Ray(this.beamMain.transform.position, this.beamMain.transform.right);
         RaycastHit hit;
-        bool bHit = Physics.Raycast(raycast, out hit, Mathf.Infinity, layerMask);
+        RaycastHit hit2;
+        bool bHitGround = Physics.Raycast(raycast, out hit, Mathf.Infinity, layerGround);
+        bool bHitForbidden = Physics.Raycast(raycast, out hit2, Mathf.Infinity, layerForbidden);
 
         float d = 20f;
 
-        if (bHit)
+        if (bHitGround && !bHitForbidden)
         {
             teleportDestination = hit.point;
             newPos = teleportDestination;
@@ -182,7 +187,6 @@ public class SG_TeleportScript : MonoBehaviour
         wrist = handScript.GetTransform(SG_TrackedHand.TrackingLevel.RenderPose, HandJoint.Wrist).gameObject;
 
         // get and set point gesture
-        pointGesture = this.transform.Find("TeleportGesture").gameObject.GetComponent<SG_BasicGesture>();
         SG_BasicGesture[] gestures = gestureLayer.gestures;
         SG_BasicGesture[] gesturesPlus = new SG_BasicGesture[gestures.Length + 1];
 
@@ -192,13 +196,9 @@ public class SG_TeleportScript : MonoBehaviour
         gesturesPlus[gesturesPlus.Length - 1] = pointGesture;
         gestureLayer.gestures = gesturesPlus;
 
-        // get the Teleport timer object
-        teleportTimerObject = this.transform.Find("TeleportTimer").gameObject;
         // get the slider of the timer
         timer = teleportTimerObject.transform.GetChild(0).gameObject.GetComponent<Slider>();
 
-        // get the Beam main object
-        beamMain = this.transform.Find("BeamMain").gameObject;
         // get the Beam
         beam = beamMain.transform.GetChild(0).gameObject;
     }

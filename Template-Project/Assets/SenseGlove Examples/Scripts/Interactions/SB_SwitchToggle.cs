@@ -1,7 +1,6 @@
 using SG;
 using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -24,6 +23,12 @@ public class SB_SwitchToggle : SB_Rotator
     [Header("Haptic effect to play when pressed")]
     public SG_CustomWaveform hapticEffect;
 
+    [Header("The collider the switch might collide with the underground and to ignore that collision")]
+    public GameObject table;
+
+    [Header("The colliders of the switch")]
+    public Collider[] colliders;
+
     [Header("--- Events --- (1 = left, 2 = middle , 3 = right)")]
     public UnityEvent firstPosEvent;
     public UnityEvent secondPosEvent;
@@ -31,6 +36,19 @@ public class SB_SwitchToggle : SB_Rotator
 
     // private vars
     private SG_TrackedHand interactingGlove;
+
+
+    private void Awake()
+    {
+        // ignore the collider that the button is placed on
+        if (table != null && table.GetComponent<Collider>() != null)
+        {
+            for (int i = 0; i < colliders.Length; i++)
+            {
+                Physics.IgnoreCollision(table.GetComponent<Collider>(), colliders[i]);
+            }
+        }
+    }
 
     // create a haptic effect on the glove when you toggle to the next state
     private void SendHapticCommand()
@@ -128,7 +146,7 @@ public class SB_SwitchToggle : SB_Rotator
         switch(amountPositions)
         {
             case 2:
-                float middlePos = ((minusTotalRotation + posTotalRotation) / 2) + startAngle;
+                float middlePos = (startAngle - minusTotalRotation) + ((minusTotalRotation + posTotalRotation) / 2);
 
                 switch (localRotateAngle)
                 {

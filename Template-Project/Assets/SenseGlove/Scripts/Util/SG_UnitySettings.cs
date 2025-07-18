@@ -69,9 +69,6 @@ namespace SG
     }
 
 
-
-
-
     //[CreateAssetMenu(menuName = "SenseGlove/SenseGloveSettings")]
 
     /// <summary> Contains Global SenseGlove Settings for this project. Accessed via SG_Core.Settings </summary>
@@ -87,12 +84,12 @@ namespace SG
         [Tooltip("The way SenseGlove communications will be initialized / disposed on this system. On Android, Standalone will always be used.")] 
         public CommunicationSetup SGCommunications = CommunicationSetup.SenseComPreferred;
 
+        // ANDROID ONLY
+
         /// <summary> Android only: If true, we will force a permissions dialog from within the App. This is required for Quest devices, but runs into trouble with Vive Devices... </summary>
         [Tooltip("Android only: If true, we will force a permissions dialog from within the App. This is required for Quest devices, but runs into trouble for Vive Devices. We will try to aumatically adjust then when you switch Wrist Tracking Offsets.")] 
         public bool ForceBluetoothPermissionsDialog = false;
 
-
-        // ANDROID ONLY
 
         // N\\A
 

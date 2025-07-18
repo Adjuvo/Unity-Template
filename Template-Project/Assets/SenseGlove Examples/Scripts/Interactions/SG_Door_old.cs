@@ -9,7 +9,7 @@ using SG.Util;
 /// !!!The door should start fully closed when the scene starts.
 /// </summary>
 
-public class SG_Door : SG_Grabable
+public class SG_Door_old : SG_Grabable
 {
     public enum rotateAngleEnum { x, y, z }
 
