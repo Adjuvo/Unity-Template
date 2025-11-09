@@ -2,12 +2,12 @@ using SG;
 using SG.Util;
 using UnityEngine;
 
-namespace Presence
+namespace SGExample
 {
 
-    public class SG_DoorFollower : MonoBehaviour
+    public class SGExample_DoorFollower : MonoBehaviour
     {
-        public SG_Door door;
+        public SGExample_Door door;
 
         public float rotation;
 

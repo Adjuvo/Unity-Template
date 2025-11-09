@@ -9,10 +9,10 @@ using SG.Util;
 /// !!!The door should start fully closed when the scene starts.
 /// </summary>
 
-namespace Presence
+namespace SGExample
 {
 
-    public class SG_Door : SG_Grabable
+    public class SGExample_Door : SG_Grabable
     {
         public enum rotateAngleEnum { x, y, z }
 
@@ -26,7 +26,7 @@ namespace Presence
         public int maxTotalRotation = 70;
 
         [Header("Object to follow")]
-        public SG_DoorFollower wrist;
+        public SGExample_DoorFollower wrist;
 
         [Header("Object to follow")]
         public float rotation;

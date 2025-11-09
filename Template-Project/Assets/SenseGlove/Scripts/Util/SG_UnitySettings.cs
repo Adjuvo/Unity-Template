@@ -10,9 +10,8 @@ namespace SG
         /// <summary> Default Option. An extenal program called SenseCom will run your SenseGlove connections when used in your scene(s). If the program is not running, an attempt is made to start it. </summary>
         SenseComPreferred,
 
-        // Not Yet Implemented...
-        ///// <summary> Default for Android. This application runs SenseGlove communications inside its own runtime.  If SenseCom is already running, ít will keep control over the runtime instead. </summary>
-        //StandaloneModePreferred,
+        /// <summary> Default for Android. This application runs SenseGlove communications inside its own runtime.  If SenseCom is already running, ít will keep control over the runtime instead. </summary>
+        StandaloneModePreferred,
 
         /// <summary> Will neither Start SenseCom nor activate internal communications. Useful for Server-side builds OR manual activation(s). </summary>
         Disabled
@@ -105,10 +104,6 @@ namespace SG
         public TrackingHardware GlobalWristTrackingOffsets = TrackingHardware.AutoDetect;
 
 
-#if UNITY_EDITOR
-        private TrackingHardware lastWristHW = TrackingHardware.AutoDetect;
-#endif
-
         // XR Inputs?
 
 
@@ -195,27 +190,6 @@ namespace SG
             positionOffset = rightHand ? customPosOffsetRight : customPosOffsetLeft;
             rotationOffset = rightHand ? CustomRightRotationOffset : CustomLeftRotationOffset;
         }
-
-
-        // Device Linking
-
-//#if UNITY_EDITOR
-//        private void OnValidate()
-//        {
-//            TrackingHardware currentHW = GlobalWristTrackingOffsets;
-//            if (this.lastWristHW != currentHW) //only when you change tracking hardware and it's not a special one...
-//            {
-//                if (currentHW != TrackingHardware.Unknown && currentHW != TrackingHardware.AutoDetect && currentHW != TrackingHardware.Custom)
-//                {
-//                    //Update the BT permissions
-//                    ForceBluetoothPermissionsDialog = currentHW == TrackingHardware.Quest2Controller
-//                        || currentHW == TrackingHardware.Quest3Controller
-//                        || currentHW == TrackingHardware.QuestProController;
-//                }
-//            }
-//            this.lastWristHW = this.GlobalWristTrackingOffsets;
-//        }
-//#endif
 
     }
 }
