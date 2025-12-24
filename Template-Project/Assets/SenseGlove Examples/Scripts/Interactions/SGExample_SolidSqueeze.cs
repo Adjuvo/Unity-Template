@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using SG;
-using Unity.Mathematics;
 
 
 namespace SGExample
@@ -53,12 +52,12 @@ namespace SGExample
 
             aFF = aFF / respondsTo.Length;
 
-            return math.lerp(1, 0, aFF);
+            return Mathf.Lerp(1, 0, aFF);
         }
 
         private void VibroCommand(float amplitude)
         { 
-            hapticEffect.amplitude = math.lerp(1, 0, amplitude * effectStrenght);
+            hapticEffect.amplitude = Mathf.Lerp(1, 0, amplitude * effectStrenght);
             this.SendCustomWaveform(hapticEffect, VibrationLocation.Palm_IndexSide);
             this.SendCustomWaveform(hapticEffect, VibrationLocation.Palm_PinkySide);
         }

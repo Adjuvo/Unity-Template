@@ -1,5 +1,8 @@
 {
   "dependencies": {
+    "com.htc.upm.wave.essence": "https://github.com/ViveSoftware/VIVE-Wave.git?path=com.htc.upm.wave.essence",
+    "com.htc.upm.wave.native": "https://github.com/ViveSoftware/VIVE-Wave.git?path=com.htc.upm.wave.native",
+    "com.htc.upm.wave.xrsdk": "https://github.com/ViveSoftware/VIVE-Wave.git?path=com.htc.upm.wave.xrsdk",
     "com.unity.ai.navigation": "1.1.6",
     "com.unity.collab-proxy": "2.7.1",
     "com.unity.ide.rider": "3.0.36",
@@ -12,7 +15,6 @@
     "com.unity.ugui": "1.0.0",
     "com.unity.xr.management": "4.4.0",
     "com.unity.xr.oculus": "4.5.1",
-    "com.unity.xr.openxr": "1.14.3",
     "com.unity.xr.picoxr": "https://github.com/Pico-Developer/PICO-Unity-Integration-SDK.git",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",

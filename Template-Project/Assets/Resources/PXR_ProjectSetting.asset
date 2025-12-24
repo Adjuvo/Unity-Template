@@ -22,13 +22,14 @@ MonoBehaviour:
   eyeTracking: 0
   eyetrackingCalibration: 0
   enableETFR: 0
+  foveationLevel: -1
   latelatching: 0
   latelatchingDebug: 0
   enableSubsampled: 0
   bodyTracking: 1
   adaptiveResolution: 0
   stageMode: 0
-  videoSeeThrough: 0
+  videoSeeThrough: 1
   spatialAnchor: 0
   sceneCapture: 0
   sharedAnchor: 0
@@ -47,3 +48,6 @@ MonoBehaviour:
   recommendMSAA: 1
   validationFFREnabled: 0
   validationETFREnabled: 0
+  portalInited: 1
+  isDataCollectionDisabled: 0
+  portalFirstSelected: 0

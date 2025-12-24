@@ -1,6 +1,10 @@
-Version 2.02
+Version 2.03
 
 Changelog:
+2.03:
+	- Updated the readme of Git so there is more explanation of the Senseglove settings
+	- Updated the Pico scripts to use the newest Pico plugin and improve of the scripts for the motion trackers
+	- Added the newest calibration for the Pico with passthrough
 
 2.02:
 	- Updated the Unity version to 2022.3.62f3

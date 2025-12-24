@@ -16694,6 +16694,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2123281752}
+  - component: {fileID: 2123281754}
   - component: {fileID: 2123281751}
   - component: {fileID: 2123281753}
   m_Layer: 0
@@ -16757,6 +16758,23 @@ MonoBehaviour:
   hardwareFamily: 0
   leftControllerModel: {fileID: 0}
   rightControllerModel: {fileID: 0}
+--- !u!114 &2123281754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123281750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0cb9aa70a22847b5925ee5f067c10a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Camera: {fileID: 963194227}
+  m_OriginBaseGameObject: {fileID: 2123281750}
+  m_CameraFloorOffsetObject: {fileID: 1202656881}
+  m_RequestedTrackingOriginMode: 2
+  m_CameraYOffset: 1.1176
 --- !u!1 &2125494939
 GameObject:
   m_ObjectHideFlags: 0

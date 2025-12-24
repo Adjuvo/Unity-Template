@@ -1,5 +1,33 @@
 {
   "dependencies": {
+    "com.htc.upm.wave.essence": {
+      "version": "https://github.com/ViveSoftware/VIVE-Wave.git?path=com.htc.upm.wave.essence",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.htc.upm.wave.xrsdk": "6.2.0-r.9",
+        "com.htc.upm.wave.native": "6.2.0-r.9"
+      },
+      "hash": "59208443d6ca54b140b28d3ca7308eda0f6c31b9"
+    },
+    "com.htc.upm.wave.native": {
+      "version": "https://github.com/ViveSoftware/VIVE-Wave.git?path=com.htc.upm.wave.native",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.htc.upm.wave.xrsdk": "6.2.0-r.9"
+      },
+      "hash": "59208443d6ca54b140b28d3ca7308eda0f6c31b9"
+    },
+    "com.htc.upm.wave.xrsdk": {
+      "version": "https://github.com/ViveSoftware/VIVE-Wave.git?path=com.htc.upm.wave.xrsdk",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.xr.management": "3.2.4"
+      },
+      "hash": "59208443d6ca54b140b28d3ca7308eda0f6c31b9"
+    },
     "com.unity.ai.navigation": {
       "version": "1.1.6",
       "depth": 0,
@@ -50,7 +78,7 @@
     },
     "com.unity.inputsystem": {
       "version": "1.14.0",
-      "depth": 1,
+      "depth": 2,
       "source": "registry",
       "dependencies": {
         "com.unity.modules.uielements": "1.0.0"
@@ -187,18 +215,6 @@
       },
       "url": "https://packages.unity.com"
     },
-    "com.unity.xr.openxr": {
-      "version": "1.14.3",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.inputsystem": "1.6.3",
-        "com.unity.xr.core-utils": "2.3.0",
-        "com.unity.xr.management": "4.4.0",
-        "com.unity.xr.legacyinputhelpers": "2.1.2"
-      },
-      "url": "https://packages.unity.com"
-    },
     "com.unity.xr.picoxr": {
       "version": "https://github.com/Pico-Developer/PICO-Unity-Integration-SDK.git",
       "depth": 0,
@@ -208,7 +224,7 @@
         "com.unity.xr.interaction.toolkit": "2.0.0",
         "com.unity.xr.core-utils": "2.3.0"
       },
-      "hash": "28f89fbdc6f56a478f7f7fb296f1769bf0233416"
+      "hash": "75f5ff2bb5b042418365f31249fd4a015c317d7f"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",
