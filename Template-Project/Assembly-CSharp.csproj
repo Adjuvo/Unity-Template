@@ -61,7 +61,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\SenseGlove\CalibrationVoid\Scripts\SG_CalibrationClasses.cs" />
-    <Compile Include="Assets\SenseGlove Examples\Scripts\Utility\SGExample_THS_SecondObject.cs" />
     <Compile Include="Assets\SenseGlove\Scripts\VR\SG_XR_Rig.cs" />
     <Compile Include="Assets\SenseGlove_Demo\HandUI\SG_MaterialFader.cs" />
     <Compile Include="Assets\SenseGlove\Scripts\Tracking\SG_FingerPassThrough.cs" />
@@ -81,6 +80,7 @@
     <Compile Include="Assets\SenseGlove Examples\Scripts\Utility\SGExample_FollowObject.cs" />
     <Compile Include="Assets\SenseGlove\Scripts\Util\SG_WireFrame.cs" />
     <Compile Include="Assets\SenseGlove\Scripts\Util\SG_Core.cs" />
+    <Compile Include="Assets\SenseGlove Examples\Scripts\Legacy\SGExample_THS_SecondObject.cs" />
     <Compile Include="Assets\SenseGlove Examples\Scripts\Pico\SG_PicoPassthrough.cs" />
     <Compile Include="Assets\SenseGlove\Scripts\Util\SG_Util.cs" />
     <Compile Include="Assets\SenseGlove\Scripts\VR\SG_XR_ListDevices.cs" />
@@ -111,6 +111,7 @@
     <Compile Include="Assets\SenseGlove\CalibrationVoid\Scripts\SG_CopyExampleHand.cs" />
     <Compile Include="Assets\SenseGlove\Scripts\Util\SG_IAndroid.cs" />
     <Compile Include="Assets\SenseGlove\CalibrationVoid\Scripts\SG_FadeUICanvas.cs" />
+    <Compile Include="Assets\SenseGlove Examples\Scripts\Legacy\SGExample_TwoHandsSeperate.cs" />
     <Compile Include="Assets\SenseGlove Examples\Prefabs\Teleport\SG_TeleportScript.cs" />
     <Compile Include="Assets\SenseGlove Examples\Scripts\Interactions\SB_Slider.cs" />
     <Compile Include="Assets\SenseGlove_Demo\TaskSystem\SG_TaskMaster.cs" />
@@ -134,7 +135,6 @@
     <Compile Include="Assets\SenseGlove Examples\Scripts\Utility\SGExamples_WristLocation.cs" />
     <Compile Include="Assets\SenseGlove\Scripts\Util\SG_IMUTracking.cs" />
     <Compile Include="Assets\SenseGlove Examples\Scripts\Legacy\SGExample_Door2.cs" />
-    <Compile Include="Assets\SenseGlove Examples\Scripts\Utility\SGExample_TwoHandsSeperate.cs" />
     <Compile Include="Assets\SenseGlove\Scripts\Interaction\SG_SqueezeOnGrab.cs" />
     <Compile Include="Assets\SenseGlove\Scripts\Feedback\SG_CustomWaveform.cs" />
     <Compile Include="Assets\SenseGlove\Scripts\Devices\SG_DeviceSelector.cs" />
@@ -145,6 +145,7 @@
     <Compile Include="Assets\SenseGlove\CalibrationVoid\Legacy\SG_CalibrationVoid.cs" />
     <Compile Include="Assets\SenseGlove\Examples\Resources\SGEx_RotateSimple.cs" />
     <Compile Include="Assets\SenseGlove\Examples\Resources\SGEx_ShowGloveAngles.cs" />
+    <Compile Include="Assets\SenseGlove Examples\Scripts\Legacy\SGExample_THS_Object.cs" />
     <Compile Include="Assets\SenseGlove_Demo\DemoMenu\Scripts\SG_BatteryMonitor.cs" />
     <Compile Include="Assets\SenseGlove\Examples\Resources\SGEx_GloveDiagnostics.cs" />
     <Compile Include="Assets\SenseGlove\Examples\Resources\SGEx_HandLayerUI.cs" />
@@ -171,9 +172,9 @@
     <Compile Include="Assets\SenseGlove\Examples\Resources\SGEx_DebugGesture.cs" />
     <Compile Include="Assets\SenseGlove\Scripts\Feedback\SG_Material.cs" />
     <Compile Include="Assets\SenseGlove\Scripts\Tracking\SG_HandAnimator.cs" />
-    <Compile Include="Assets\SenseGlove Examples\Scripts\Utility\SGExamples_SecondHandOnObject.cs" />
     <Compile Include="Assets\SenseGlove_Demo\DemoMenu\Scripts\SG_GloveStatusIcon.cs" />
     <Compile Include="Assets\SenseGlove\Examples\Resources\SG_InputSlider.cs" />
+    <Compile Include="Assets\SenseGlove Examples\Scripts\Legacy\SGExamples_SecondHandOnObject.cs" />
     <Compile Include="Assets\SenseGlove\Scripts\Calibration\SG_XR_CalibrationMenu.cs" />
     <Compile Include="Assets\SenseGlove_Demo\TaskSystem\SG_GroupTask_AnyOrder.cs" />
     <Compile Include="Assets\SenseGlove\Scripts\Util\SG_ManualPoser.cs" />
@@ -197,7 +198,6 @@
     <Compile Include="Assets\SenseGlove\Scripts\Util\SG_ResetFloor.cs" />
     <Compile Include="Assets\SenseGlove\Scripts\Controls\SG_DropZone.cs" />
     <Compile Include="Assets\SenseGlove Examples\Scripts\Interactions\SB_Button.cs" />
-    <Compile Include="Assets\SenseGlove Examples\Scripts\Utility\SGExample_THS_Object.cs" />
     <Compile Include="Assets\SenseGlove Examples\Scripts\Interactions\SG_Dial.cs" />
     <Compile Include="Assets\SenseGlove\Scripts\Tracking\SG_FingerProjector1DoF.cs" />
     <Compile Include="Assets\SenseGlove\Scripts\Util\SG_PhysicsHelper.cs" />
